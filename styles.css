@@ -1,0 +1,129 @@
+:root {
+    --color-tan: #D3B88C;
+    --color-sienna: #230903;
+    --color-ebony: #656256;
+    --color-cambridge: #9EBC9F;
+    --color-cultured: #F4F2F3;
+}
+
+body {
+    background-image: url("/images/bg-pattern.png");
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-weight: 100;
+    line-height: 43px;
+    letter-spacing: 0.02em;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    position: relative;
+    background-image: url("/images/interior.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 100vh;
+}
+
+.sidebar-photo {
+    background-size: cover;
+}
+
+.overlay {
+    width: 100%;
+    background: #F4F2F3;
+    opacity: 0.5;
+    position: absolute;
+    padding: 60px 0px;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.headline h1,
+.input-section h1,
+.input-form  {
+    padding: 0px 50px;
+}
+
+.input-section {
+    background-color: var(--color-tan);
+    opacity: 80%;
+    padding: 30px 0px;
+}
+
+.row {
+    display: flex;
+    gap: 70px;
+}
+
+label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    color: var(--color-sienna);
+    margin-bottom: 50px;
+}
+
+.col-xs-12.col-sm-6.input-box input {
+    display: block;
+    width: 350px;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /* border: none; */
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #167a92;
+    background-color: rgb(215 239 255);
+}
+  
+
+button {
+    width: 180px;
+    height: 60px;
+    border: 3px solid var(--color-ebony);
+    background-color: var(--color-ebony);
+    color: var(--color-cultured);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+}
+
+.login-message {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+}
+
+.login-box.row {
+    justify-content: center;
+}
+
+.login a {
+    color: var(--color-ebony);
+}
