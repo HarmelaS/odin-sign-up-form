@@ -1,3 +1,9 @@
+/* 
+************************
+GLOBAL
+*********************** 
+*/
+
 :root {
     --color-tan: #D3B88C;
     --color-sienna: #230903;
@@ -18,8 +24,19 @@ h1 {
     letter-spacing: 0.02em;
 }
 
+/* 
+************************
+DESKTOP
+*********************** 
+*/
+
 .container {
     display: flex;
+}
+
+.topbar {
+    display: none;
+    background-image: url("/images/interior.jpg");
 }
 
 .sidebar {
@@ -35,6 +52,12 @@ h1 {
 .sidebar-photo {
     background-size: cover;
 }
+
+img.comapny-logo {
+    width: 80%;
+}
+
+
 
 .overlay {
     width: 100%;
@@ -64,7 +87,8 @@ h1 {
     gap: 70px;
 }
 
-label {
+label,
+#noMatch {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -121,9 +145,55 @@ button {
 }
 
 .login-box.row {
-    justify-content: center;
+    justify-content: left;
 }
 
 .login a {
     color: var(--color-ebony);
+}
+
+.invalid {
+    border: 2px solid red;
+    background-color: #ff000036;
+}
+
+#noMatch {
+    color: red;
+}
+
+/* 
+************************
+MOBILE
+*********************** 
+*/
+
+@media screen and (max-width: 760px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .topbar {
+        
+        background-image: url("/images/interior.jpg");
+        background-size: cover;
+        height: 200px;
+        display: flex;
+        background-position: right;
+        justify-content: CENTER;
+        align-items: center;
+    }
+
+    img.comapny-logo-mobile {
+        background-color: rgb(255,255,255,0.5);
+        padding: 30px;
+    }
 }
